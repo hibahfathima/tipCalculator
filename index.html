@@ -23,8 +23,8 @@
     
     <button id="clear" onclick="clearValues()">Clear</button>
 
-    <p id="tipAmount">Tip Amount $0.00</p>
-    <p id="totalAmount">Total amount $0.00</p>
+    <p id="tipAmount"></p>
+    <p id="totalAmount"></p>
 
 
 
@@ -32,20 +32,29 @@
     <script>
          lineOne=document.getElementById("tipAmount");
          lineTwo=document.getElementById("totalAmount");
+
+
         function calculateBill(){
             const foodValue=billAmount.value
             const tipPercentage=tipPercent.value;
             const foodValueNumber=eval(foodValue)
-        
             const tipPercentageNumber=eval(tipPercentage);
+
+
             const tipValue=(foodValueNumber*tipPercentageNumber)/100;
             const totalValue=tipValue+foodValueNumber;
 
-
-        lineOne=document.getElementById("tipAmount");
-        lineOne.innerHTML= "Tip Amount  "+"$"+tipValue;
-        lineTwo=document.getElementById("totalAmount");
+            if(isNaN(foodValueNumber)|| isNaN(tipPercentageNumber)){
+                lineTwo.innerHTML='enter a valid bill amount';
+                lineTwo.style.fontSize='20px'
+            }
+            else{
+                lineOne.innerHTML= "Tip Amount  "+"$"+tipValue;
         lineTwo.innerHTML= "total Amount  "+"$"+totalValue;
+
+            }
+        
+        
 
         
             
@@ -56,8 +65,8 @@
         function clearValues(){
             billAmount.value=''
             tipPercent.value=''
-            lineOne.innerHTML= "Tip Amount $0.00"
-            lineTwo.innerHTML= "total Amount $0.00"
+            lineOne.innerHTML= ""
+            lineTwo.innerHTML= ""
              
         }
         

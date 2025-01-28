@@ -68,3 +68,11 @@ input{
     color:white;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
+
+
+@media(max-width:400px){
+    .box{
+        width:300px;
+        margin-top:250px;
+    }
+}
