@@ -1,0 +1,70 @@
+body{
+    background-color: rgb(96, 42, 51);
+    box-sizing:border-box
+}
+
+
+
+.box{
+    height:350px;
+    width:270px;
+    margin:0 auto;
+    
+    margin-top:150px;
+    padding: 15px;
+    background-image: linear-gradient(to right top, #c13c74, #cc3b6f, #d63c69, #df3d63, #e7405b);
+    border-radius: 20px;
+
+}
+
+h4{
+    text-align:center;
+    color:white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+input{
+    border-radius: 10px;
+    margin:0 auto;
+    border:none;
+    width:240px;
+    height:30px;
+    font-size:12px;
+    padding-left:10px;
+}
+#billAmount{
+    margin-top:25px;
+}
+
+#submit{
+    color:white;
+    border-radius: 20px;
+    background-color: rgb(12, 11, 12);
+    border:none;
+    width:100px;
+    display:block;
+    margin:0 auto;
+}
+
+#clear{
+    color:white;
+    border-radius: 20px;
+    background-color: red;
+    border:none;
+    width:100px;
+    display:block;
+    margin:0 auto;
+    margin-bottom:10px;
+}
+
+#tipAmount{
+    text-align: center;
+    color:white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#totalAmount{
+    text-align: center;
+    color:white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
