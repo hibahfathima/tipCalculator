@@ -72,7 +72,7 @@ input{
 
 @media(max-width:400px){
     .box{
-        width:415px;
+    
         margin-top:250px;
     }
 }
