@@ -30,6 +30,8 @@
 
 
     <script>
+         lineOne=document.getElementById("tipAmount");
+         lineTwo=document.getElementById("totalAmount");
         function calculateBill(){
             const foodValue=billAmount.value
             const tipPercentage=tipPercent.value;
@@ -54,6 +56,9 @@
         function clearValues(){
             billAmount.value=''
             tipPercent.value=''
+            lineOne.innerHTML= "Tip Amount $0.00"
+            lineTwo.innerHTML= "total Amount $0.00"
+             
         }
         
     </script>
